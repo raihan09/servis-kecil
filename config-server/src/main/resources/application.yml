@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+         git:
+          uri: https://github.com/raihan09/servis-kecils-config   # pakai folder Git lokal
+          default-label: main
+server:
+  port: 8888
+management:
+  endpoints:
+    web.exposure.include: "*"
