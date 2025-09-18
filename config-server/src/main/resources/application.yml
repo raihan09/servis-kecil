@@ -5,7 +5,7 @@ spring:
     config:
       server:
          git:
-          uri: https://github.com/raihan09/servis-kecils-config   # pakai folder Git lokal
+          uri: https://github.com/raihan09/servis-kecil/tree/main/servis-kecils-config # pakai folder Git lokal
           default-label: main
 server:
   port: 8888
