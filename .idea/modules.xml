@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/servis-kecil.iml" filepath="$PROJECT_DIR$/.idea/servis-kecil.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../servis-kecils-config/servis-kecils-config.iml" filepath="$PROJECT_DIR$/../servis-kecils-config/servis-kecils-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servis-kecils-config/servis-kecils-config.iml" filepath="$PROJECT_DIR$/servis-kecils-config/servis-kecils-config.iml" />
     </modules>
   </component>
 </project>
