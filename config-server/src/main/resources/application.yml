@@ -5,8 +5,10 @@ spring:
     config:
       server:
          git:
-          uri: https://github.com/raihan09/servis-kecil/tree/main/servis-kecils-config # pakai folder Git lokal
+          uri: https://github.com/raihan09/servis-kecil.git
+          searchPaths: servis-kecils-config
           default-label: main
+          clone-on-start: true
 server:
   port: 8888
 management:
