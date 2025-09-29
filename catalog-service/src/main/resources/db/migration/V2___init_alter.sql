@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS products;
 create table products
 (
     price numeric(12, 2) not null,

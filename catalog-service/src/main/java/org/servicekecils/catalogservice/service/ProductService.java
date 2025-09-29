@@ -10,7 +10,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -24,6 +27,13 @@ public class ProductService {
         return repo.findBySku(sku)
                 .map(this::toDto)
                 .orElseThrow(() -> new NoSuchElementException("Product not found"));
+    }
+
+    @Transactional(readOnly = true)
+    @Cacheable(value = "products")
+    public List<ProductDto> getAll() {
+        return repo.findAll().stream()
+                .map(this::toDto).collect(Collectors.toList());
     }
 
     @Transactional
