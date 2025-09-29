@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DiffGenerationConfig">
+    <option name="sourceDbValue" value="b6d948b1-fbba-400c-b2c9-691d9f3352fc" />
+    <option name="sourceModelValue" value="catalog-service:catalog-service" />
+    <option name="targetDbValue" value="b6d948b1-fbba-400c-b2c9-691d9f3352fc__catalogdb_public" />
+  </component>
+</project>
